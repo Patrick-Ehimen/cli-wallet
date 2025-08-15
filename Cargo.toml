@@ -1,0 +1,16 @@
+[package]
+name = "cli-wallet"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+secp256k1 = { version = "0.28", features = ["rand-std", "hashes"] }  # rand-std enables random number generation using std library, hashes enables integration with common hash types
+sha2 = "0.10"
+rand = "0.8"
+clap = { version = "4.0", features = ["derive"] }  # derive enables procedural macros for automatically generating command-line argument parsers from structs and enums
+hex = "0.4"
+
+[dev-dependencies]
+criterion = "0.5"
+assert_cmd = "2.0"
+predicates = "3.0"
