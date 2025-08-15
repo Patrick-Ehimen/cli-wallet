@@ -157,6 +157,7 @@ impl WalletError {
         WalletError::AddressError(msg.into())
     }
 }
+
 #[cfg(test)]
 mod tests {
     use super::*;
